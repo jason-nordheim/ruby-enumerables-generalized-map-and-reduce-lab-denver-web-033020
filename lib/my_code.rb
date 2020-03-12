@@ -23,5 +23,5 @@ end
 # output:
 # => a true or false
 def reduce(data, starting_value=0)
-  yield(data)
+  yield(data, starting_value)
 end
