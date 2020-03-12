@@ -5,6 +5,12 @@
 # output:
 # => array with each item run against the code
 def map(data)
+  result = [] 
+  i = 0 
+  while i < result.count do 
+
+  end 
+  return result 
 end
 
 
