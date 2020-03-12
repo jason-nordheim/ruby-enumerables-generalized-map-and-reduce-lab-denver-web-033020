@@ -7,6 +7,9 @@
 def map(data)
 end
 
+map(ary) do | block |
+end 
+
 # input:
 # => array of data
 # => block of code to be executed on the array
