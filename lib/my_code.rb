@@ -9,9 +9,9 @@ def map(data)
   i = 0
   while i < data.count do
     x = yield(data[i])
-    result << x 
+    result << x
   end
-
+  return result
 end
 
 
