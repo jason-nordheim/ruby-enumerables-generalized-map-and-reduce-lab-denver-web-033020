@@ -22,11 +22,11 @@ end
 # => block of code to be executed on the array
 # output:
 # => a true or false
-def reduce(data, st_value=0)
+def reduce(data, st_value)
   result = st_value
   i = 0
   while i < data.count do
-    result += yield(data[i], result)
+    yield(data[i], result)
     i += 1
   end
   return result
