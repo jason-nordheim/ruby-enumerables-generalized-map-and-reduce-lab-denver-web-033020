@@ -7,10 +7,11 @@
 def map(data)
   result = []
   i = 0
-  while i < result.count do
-
+  while i < data.count do
+    yield(data[i])
+    result << data[i]
   end
-  return result 
+  return result
 end
 
 
