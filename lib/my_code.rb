@@ -36,7 +36,7 @@ def reduce(data, sv=nil)
   end
 
   while i < data.count do
-
+    yield(num, data[i])
   end
 
 end
