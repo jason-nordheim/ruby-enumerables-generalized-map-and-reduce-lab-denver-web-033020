@@ -7,9 +7,7 @@
 def map(data)
 end
 
-map(ary) do | block |
-  yield block
-end
+
 
 # input:
 # => array of data
@@ -17,8 +15,4 @@ end
 # output:
 # => a true or false
 def reduce(data)
-end
-
-reduce(ary) do | block |
-  yield 
 end
