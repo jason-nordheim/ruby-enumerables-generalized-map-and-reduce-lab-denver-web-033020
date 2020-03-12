@@ -8,7 +8,8 @@ def map(data)
 end
 
 map(ary) do | block |
-end 
+  yield block 
+end
 
 # input:
 # => array of data
