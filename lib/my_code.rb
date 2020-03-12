@@ -8,7 +8,8 @@ def map(data)
   result = []
   i = 0
   while i < data.count do
-    result = yield(data[i])
+    x = yield(data[i])
+    result << x 
   end
 
 end
