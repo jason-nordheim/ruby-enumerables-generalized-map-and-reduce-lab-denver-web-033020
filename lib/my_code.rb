@@ -23,7 +23,16 @@ end
 # output:
 # => a true or false
 def reduce(data, sv=nil)
+  # check to see if we have a starting value
   if sv
-    num1 = sv  
+    num1 = sv
+    i = 0
+    while i < data.count do
+
+    end
+  # we do NOT have a starting value 
+  else
+    # initialize to provided starting value
+    num1 = data[0]
   end
 end
