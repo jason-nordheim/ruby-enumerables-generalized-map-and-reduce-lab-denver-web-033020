@@ -5,14 +5,7 @@
 # output:
 # => array with each item run against the code
 def map(data)
-  result = []
-  i = 0
-  while i < data.count do
-    yield(data[i])
-    result << data[i]
-    i += 1
-  end
-  return result
+  yield(data)
 end
 
 
