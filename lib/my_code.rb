@@ -23,5 +23,7 @@ end
 # output:
 # => a true or false
 def reduce(data, sv=nil)
-  
+  if sv
+    num1 = sv  
+  end
 end
