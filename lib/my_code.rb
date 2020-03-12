@@ -26,7 +26,7 @@ def reduce(data, st_value=0)
   result = st_value
   i = 0
   while i < data.count do
-    result += yield(data[i], out)
+    result += yield(data[i], result)
     i += 1
   end
   return result
