@@ -40,5 +40,5 @@ def reduce(data, sv=nil)
     i += 1
   end
 
-  return result 
+  return sum 
 end
