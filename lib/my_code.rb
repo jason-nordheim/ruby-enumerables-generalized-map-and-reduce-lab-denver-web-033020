@@ -22,22 +22,6 @@ end
 # => block of code to be executed on the array
 # output:
 # => a true or false
-def reduce(data, starting_value=nil)
-  if(starting_value == nil)
-    result = []
-    i = 0
-    while i < data.count do
-      result << yield(data[i])
-      i += 1
-    end
-    return result
-  else
-    total = starting_value
-    i = 0
-    while i < data.count do
-      total += yield(data[i])
-      i += 1
-    end
-    return result
-  end
+def reduce(data, sv=nil)
+  
 end
