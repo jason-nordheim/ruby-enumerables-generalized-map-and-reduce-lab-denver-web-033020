@@ -22,7 +22,7 @@ end
 # => block of code to be executed on the array
 # output:
 # => a true or false
-def reduce(data, st_value=nil)
+def reduce(data, st_value=0)
   out = st_value
   i = 0
   while i < data.count do
