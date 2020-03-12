@@ -26,12 +26,12 @@ def reduce(data, sv=nil)
   # check to see if we have a starting value
   if sv
     # set the first value to the starting value provided
-    num1 = sv
+    sum = sv
     i = 0
   # we do NOT have a starting value
   else
     # initialize to provided starting value
-    num1 = data[0]
+    sum = data[0]
     i = 1 # already looked at the first element
   end
 
