@@ -10,6 +10,7 @@ def map(data)
   while i < data.count do
     x = yield(data[i])
     result << x
+    i += 1 
   end
   return result
 end
@@ -22,5 +23,8 @@ end
 # output:
 # => a true or false
 def reduce(data, starting_value=0)
-  yield(data, starting_value)
+  out = starting_value
+  i = 0
+  while i < data.count do
+    yield(data[i], out)
 end
