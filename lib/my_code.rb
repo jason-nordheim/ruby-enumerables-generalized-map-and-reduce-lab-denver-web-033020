@@ -27,4 +27,5 @@ def reduce(data, starting_value=0)
   i = 0
   while i < data.count do
     yield(data[i], out)
+    i += 1 
 end
