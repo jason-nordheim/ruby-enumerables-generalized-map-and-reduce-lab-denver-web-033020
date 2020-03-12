@@ -21,5 +21,6 @@ end
 # => block of code to be executed on the array
 # output:
 # => a true or false
-def reduce(data)
+def reduce(data, starting_value=0)
+
 end
