@@ -4,7 +4,7 @@
 # => block of code to be executed on the array
 # output:
 # => array with each item run against the code
-map(data) do | block |
+def map(data) do | block |
   yield block
 end
 
