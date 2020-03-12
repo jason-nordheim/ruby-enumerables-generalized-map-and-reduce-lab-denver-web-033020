@@ -8,8 +8,8 @@ def map(data)
   result = []
   i = 0
   while i < data.count do
-    x = yield(data[i])
-    result << x
+    yield(data[i])
+    result << data[i]
     i += 1
   end
   return result
@@ -22,12 +22,22 @@ end
 # => block of code to be executed on the array
 # output:
 # => a true or false
-def reduce(data, st_value)
-  result = st_value
-  i = 0
-  while i < data.count do
-    yield(data[i], result)
-    i += 1
+def reduce(data, starting_value=nil)
+  if(starting_value == nil)
+    result = []
+    i = 0 
+    while i < data.count do
+      result << yield(data[i])
+      i += 1
+    end
+    return result
+  else
+    total = starting_value
+    i = 0
+    while i < data.count do
+      total += yield(data[i])
+      i += 1
+    end
+    return result
   end
-  return result
 end
