@@ -8,7 +8,7 @@ def map(data)
 end
 
 map(ary) do | block |
-  yield block 
+  yield block
 end
 
 # input:
@@ -19,6 +19,6 @@ end
 def reduce(data)
 end
 
-reduce(ary) do | block | 
+reduce(ary) do | block |
   yield 
-end 
+end
