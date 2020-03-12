@@ -29,5 +29,5 @@ def reduce(data, starting_value=nil)
     yield(data[i], out)
     i += 1
   end
-  return out 
+  return out
 end
