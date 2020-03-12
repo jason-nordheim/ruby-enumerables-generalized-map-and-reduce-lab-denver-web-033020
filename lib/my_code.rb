@@ -39,4 +39,6 @@ def reduce(data, sv=nil)
     sum = yield(sum, data[i])
     i += 1 
   end
+
+  return result 
 end
