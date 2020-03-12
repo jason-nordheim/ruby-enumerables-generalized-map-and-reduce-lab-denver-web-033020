@@ -5,11 +5,11 @@
 # output:
 # => array with each item run against the code
 def map(data)
-  result = [] 
-  i = 0 
-  while i < result.count do 
+  result = []
+  i = 0
+  while i < result.count do
 
-  end 
+  end
   return result 
 end
 
