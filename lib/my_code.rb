@@ -23,11 +23,11 @@ end
 # output:
 # => a true or false
 def reduce(data, st_value=0)
-  out = st_value
+  result = st_value
   i = 0
   while i < data.count do
-    yield(data[i], out)
+    result += yield(data[i], out)
     i += 1
   end
-  return out
+  return result
 end
