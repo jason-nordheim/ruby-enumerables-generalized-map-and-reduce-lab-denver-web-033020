@@ -4,8 +4,7 @@
 # => block of code to be executed on the array
 # output:
 # => array with each item run against the code
-def map(data) do | block |
-  yield block
+def map(data)
 end
 
 # input:
@@ -13,6 +12,5 @@ end
 # => block of code to be executed on the array
 # output:
 # => a true or false
-def reduce(data) do | block |
-  yield block
+def reduce(data) 
 end
