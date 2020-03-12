@@ -18,3 +18,7 @@ end
 # => a true or false
 def reduce(data)
 end
+
+reduce(ary) do | block | 
+  yield 
+end 
