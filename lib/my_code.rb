@@ -35,6 +35,6 @@ def reduce(data, sv=nil)
   else
     # initialize to provided starting value
     num1 = data[0]
-    i = 1 
+    i = 1 # already looked at the first element 
   end
 end
