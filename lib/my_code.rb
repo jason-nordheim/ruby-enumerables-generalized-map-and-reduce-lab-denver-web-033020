@@ -10,7 +10,7 @@ def map(data)
   while i < data.count do
     x = yield(data[i])
     result << x
-    i += 1 
+    i += 1
   end
   return result
 end
