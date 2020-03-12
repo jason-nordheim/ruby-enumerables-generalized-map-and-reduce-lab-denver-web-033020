@@ -13,6 +13,6 @@ end
 # => block of code to be executed on the array
 # output:
 # => a true or false
-reduce(data) do | block |
+def reduce(data) do | block |
   yield block
-end 
+end
