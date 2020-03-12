@@ -25,7 +25,7 @@ end
 def reduce(data, sv=nil)
   # check to see if we have a starting value
   if sv
-    # set the first value to the starting value provided 
+    # set the first value to the starting value provided
     num1 = sv
     i = 0
     while i < data.count do
@@ -35,5 +35,6 @@ def reduce(data, sv=nil)
   else
     # initialize to provided starting value
     num1 = data[0]
+    i = 1 
   end
 end
