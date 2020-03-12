@@ -28,13 +28,15 @@ def reduce(data, sv=nil)
     # set the first value to the starting value provided
     num1 = sv
     i = 0
-    while i < data.count do
-
-    end
   # we do NOT have a starting value
   else
     # initialize to provided starting value
     num1 = data[0]
-    i = 1 # already looked at the first element 
+    i = 1 # already looked at the first element
   end
+
+  while i < data.count do
+
+  end
+
 end
